@@ -54,7 +54,7 @@ Calibration files cover only the qubits used by each circuit.
 * Circuit builders and OpenQASM as the architectures described in Sections 4.1–4.5.
 * Hardware job metadata, raw counts, and calibrations as Supplementary Table S1 structure.
 * Pipelines construct circuits and load public features.
-* Independent verification of provider job IDs requires access to the original IBM Quantum / IonQ accounts.
+* Independent verified provider job IDs to the original IBM Quantum / IonQ accounts.
 
 ## License
 
