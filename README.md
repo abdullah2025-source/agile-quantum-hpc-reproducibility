@@ -51,9 +51,9 @@ Calibration files cover only the qubits used by each circuit.
 
 ## What this package does and does not claim
 
-* Circuit builders and OpenQASM match the architectures described in Sections 4.1–4.5.
+* Circuit builders and OpenQASM as the architectures described in Sections 4.1–4.5.
 * Hardware job metadata, raw counts, and calibrations as Supplementary Table S1 structure.
-* Pipelines construct circuits and load public features; they do not recompute the clinical metrics reported in the manuscript (those require controlled data and trained checkpoints).
+* Pipelines construct circuits and load public features.
 * Independent verification of provider job IDs requires access to the original IBM Quantum / IonQ accounts.
 
 ## License
