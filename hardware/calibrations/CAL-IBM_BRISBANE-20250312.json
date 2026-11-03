@@ -1,0 +1,50 @@
+{
+  "backend_name": "ibm_brisbane",
+  "last_update_date": "2025-03-12T10:03:22Z",
+  "qubits_used": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "qubits": [
+    {
+      "qubit": 0,
+      "T1_us": 158.25,
+      "T2_us": 75.97,
+      "readout_error": 0.0154
+    },
+    {
+      "qubit": 1,
+      "T1_us": 131.38,
+      "T2_us": 122.1,
+      "readout_error": 0.0171
+    },
+    {
+      "qubit": 2,
+      "T1_us": 141.76,
+      "T2_us": 132.57,
+      "readout_error": 0.0203
+    },
+    {
+      "qubit": 3,
+      "T1_us": 103.67,
+      "T2_us": 91.37,
+      "readout_error": 0.0093
+    },
+    {
+      "qubit": 4,
+      "T1_us": 165.74,
+      "T2_us": 114.3,
+      "readout_error": 0.02
+    },
+    {
+      "qubit": 5,
+      "T1_us": 112.71,
+      "T2_us": 79.43,
+      "readout_error": 0.0189
+    }
+  ]
+}

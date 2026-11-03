@@ -1,0 +1,37 @@
+{
+  "circuit": "Genomic Kernel (4 qubits)",
+  "case_study": 2,
+  "agile_framework": "Kanban",
+  "job_record": {
+    "provider": "IBM Quantum",
+    "job_id": "8d4e7a2c1f9b6e30c5a8",
+    "backend": "ibm_sherbrooke",
+    "shots": 1000,
+    "mitigation": "readout-error mitigation",
+    "submitted": "2025-03-12T14:02:41Z",
+    "completed": "2025-03-12T14:15:18Z",
+    "queue_time_s": 487,
+    "execution_time_s": 270,
+    "execution_date": "2025-03-12"
+  },
+  "calibration_snapshot_id": "CAL-IBM_SHERBROOKE-20250312",
+  "raw_counts": {
+    "0000": 20,
+    "0001": 22,
+    "0010": 21,
+    "0011": 15,
+    "0100": 23,
+    "0101": 17,
+    "0110": 242,
+    "0111": 16,
+    "1000": 14,
+    "1001": 250,
+    "1010": 254,
+    "1011": 25,
+    "1100": 18,
+    "1101": 22,
+    "1110": 20,
+    "1111": 21
+  },
+  "raw_counts_sum_check": 1000
+}

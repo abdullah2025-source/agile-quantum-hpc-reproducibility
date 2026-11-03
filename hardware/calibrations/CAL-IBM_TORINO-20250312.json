@@ -1,0 +1,50 @@
+{
+  "backend_name": "ibm_torino",
+  "last_update_date": "2025-03-12T11:17:12Z",
+  "qubits_used": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "qubits": [
+    {
+      "qubit": 0,
+      "T1_us": 166.04,
+      "T2_us": 144.68,
+      "readout_error": 0.0131
+    },
+    {
+      "qubit": 1,
+      "T1_us": 167.11,
+      "T2_us": 100.15,
+      "readout_error": 0.0113
+    },
+    {
+      "qubit": 2,
+      "T1_us": 170.85,
+      "T2_us": 139.27,
+      "readout_error": 0.0138
+    },
+    {
+      "qubit": 3,
+      "T1_us": 113.27,
+      "T2_us": 125.9,
+      "readout_error": 0.0106
+    },
+    {
+      "qubit": 4,
+      "T1_us": 153.73,
+      "T2_us": 116.28,
+      "readout_error": 0.011
+    },
+    {
+      "qubit": 5,
+      "T1_us": 124.33,
+      "T2_us": 120.54,
+      "readout_error": 0.0094
+    }
+  ]
+}

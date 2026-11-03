@@ -1,0 +1,36 @@
+{
+  "backend_name": "ibm_sherbrooke",
+  "last_update_date": "2025-03-12T13:47:41Z",
+  "qubits_used": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "qubits": [
+    {
+      "qubit": 0,
+      "T1_us": 121.25,
+      "T2_us": 111.42,
+      "readout_error": 0.0104
+    },
+    {
+      "qubit": 1,
+      "T1_us": 111.43,
+      "T2_us": 115.82,
+      "readout_error": 0.0101
+    },
+    {
+      "qubit": 2,
+      "T1_us": 135.83,
+      "T2_us": 131.61,
+      "readout_error": 0.0144
+    },
+    {
+      "qubit": 3,
+      "T1_us": 136.06,
+      "T2_us": 106.98,
+      "readout_error": 0.0097
+    }
+  ]
+}
