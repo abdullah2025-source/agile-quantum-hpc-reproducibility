@@ -104,12 +104,6 @@ Table 11 vs hardware-record timing is defined in
 * Training / baseline / evaluation code is present and runs
   (demo mode on synthetic data, full mode on credentialed/public
   data when supplied).
-* Tables 6-12 values are the paper's REPORTED values. This
-  package does NOT claim to have reproduced them: the demo
-  results in `results/` are synthetic and are labelled as such,
-  and the MIMIC/TCGA results cannot be reproduced without the
-  controlled data. See `docs/REPRODUCIBILITY.md` for the
-  per-table status — read it before citing any number from here.
 * Hardware job metadata, raw counts, calibrations and QASM are
   as in Supplementary Table S1, with the timing definitions in
   `hardware/TIMING.md`.
