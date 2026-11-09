@@ -1,0 +1,7 @@
+team,period,code_duplication_lines,circuit_reuse_pct,end_to_end_latency_ms,clinician_nps
+Team A,baseline,5000,15,450,32
+Team B,baseline,4000,15,450,32
+Team C,baseline,3400,15,450,32
+Team A,safe,2000,78,248,64
+Team B,safe,1600,78,248,64
+Team C,safe,1360,78,248,64

@@ -1,0 +1,51 @@
+{
+  "circuit": "SAFe Service Kernel (4 qubits)",
+  "case_study": 5,
+  "agile_framework": "SAFe",
+  "job_record": {
+    "provider": "IonQ",
+    "job_id": "9e2b6d4a-1f8c-4e7b-a3d5-7c1e9f2a6b8d",
+    "backend": "qpu.forte-1",
+    "shots": 500,
+    "mitigation": "none",
+    "submitted": "2025-03-14T09:05:44Z",
+    "completed": "2025-03-14T09:12:19Z",
+    "queue_time_s": 268,
+    "execution_time_s": 127,
+    "execution_date": "2025-03-14",
+    "wall_clock_s": 395,
+    "other_overhead_s": 0,
+    "qpu_time_ms": {
+      "mean": 85,
+      "sd": 12,
+      "source": "Manuscript Table 11 (mean +/- SD, per-circuit QPU time)"
+    },
+    "timing_scope": {
+      "execution_time_s": "Total IBM Quantum Runtime / IonQ job execution phase for the whole evaluation run for this case study (all circuits / COBYLA iterations / kernel batches, transpilation, classical pre/post-processing and readout-error mitigation). NOT a single-circuit time.",
+      "qpu_time_ms": "Mean per-circuit QPU execution time from Table 11. Excludes queueing, network, encoding, mitigation and classical post-processing.",
+      "queue_time_s": "Time the job spent queued before execution.",
+      "other_overhead_s": "Wall-clock time not accounted for by queue_time_s + execution_time_s (provider-side result retrieval / post-processing). 0 for 4 of 5 jobs; 100 s for the drug-target job \u2014 see hardware/TIMING.md.",
+      "wall_clock_s": "completed - submitted, in seconds. wall_clock_s = queue_time_s + execution_time_s + other_overhead_s by construction."
+    }
+  },
+  "calibration_snapshot_id": "CAL-QPU_FORTE-1-20250314",
+  "raw_counts": {
+    "0000": 10,
+    "0001": 10,
+    "0010": 11,
+    "0011": 15,
+    "0100": 11,
+    "0101": 10,
+    "0110": 12,
+    "0111": 10,
+    "1000": 120,
+    "1001": 12,
+    "1010": 11,
+    "1011": 10,
+    "1100": 119,
+    "1101": 10,
+    "1110": 8,
+    "1111": 121
+  },
+  "raw_counts_sum_check": 500
+}

@@ -1,0 +1,10 @@
+{
+  "mode": "demo",
+  "epochs": 2,
+  "batch_size": 16,
+  "quantum_generator_parameters": 12,
+  "latent_dim": 64,
+  "demo_psnr_db_mean_8_images": 10.723505554851517,
+  "tdd_gate_psnr_gt_30db": false,
+  "note": "Demo mode uses synthetic images and 2 epochs; it proves the training loop runs. It is NOT Table 8 (PSNR 38.2 dB). Full mode needs ChestX-ray14 images (not distributed)."
+}

@@ -1,0 +1,58 @@
+{
+  "ICU Anomaly Detection (6-qubit VQC)": {
+    "aer_shots": 1024,
+    "measured_qubits": [
+      0
+    ],
+    "ideal_aer_fidelity_bhattacharyya": 0.9997580133131716,
+    "note": "Ideal Aer, no backend noise model. Table 11 simulator fidelities are 0.985-0.992 (noise-aware, paper-reported)."
+  },
+  "Genomic Kernel (4 qubits)": {
+    "aer_shots": 1024,
+    "measured_qubits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "ideal_aer_fidelity_bhattacharyya": 0.9960746188806404,
+    "note": "Ideal Aer, no backend noise model. Table 11 simulator fidelities are 0.985-0.992 (noise-aware, paper-reported)."
+  },
+  "Drug-Target Kernel (6 qubits)": {
+    "aer_shots": 1024,
+    "measured_qubits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ideal_aer_fidelity_bhattacharyya": 0.98784373934643,
+    "note": "Ideal Aer, no backend noise model. Table 11 simulator fidelities are 0.985-0.992 (noise-aware, paper-reported)."
+  },
+  "Radiology QGAN Generator (6 qubits)": {
+    "aer_shots": 1024,
+    "measured_qubits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ideal_aer_fidelity_bhattacharyya": 0.9819852262693144,
+    "note": "Ideal Aer, no backend noise model. Table 11 simulator fidelities are 0.985-0.992 (noise-aware, paper-reported)."
+  },
+  "SAFe Service Kernel (4 qubits)": {
+    "aer_shots": 1024,
+    "measured_qubits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "ideal_aer_fidelity_bhattacharyya": 0.9969135598373944,
+    "note": "Ideal Aer, no backend noise model. Table 11 simulator fidelities are 0.985-0.992 (noise-aware, paper-reported)."
+  }
+}

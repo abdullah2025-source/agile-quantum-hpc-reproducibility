@@ -1,0 +1,20 @@
+{
+  "data_source": "SYNTHETIC demo variants \u2014 NOT Table 7",
+  "kernel": "4-qubit projected quantum kernel, statevector fidelity",
+  "n_train": 30,
+  "n_test": 20,
+  "metrics": {
+    "accuracy": 0.6,
+    "sensitivity": 1.0,
+    "specificity": 0.2727272727272727,
+    "f1": 0.6923076923076923,
+    "false_alarm_rate": 0.7272727272727273,
+    "n": 20,
+    "tp": 9,
+    "tn": 3,
+    "fp": 8,
+    "fn": 0,
+    "rare_variant_sensitivity_vaf_lt_5pct": 0.75,
+    "n_rare_test": 4
+  }
+}

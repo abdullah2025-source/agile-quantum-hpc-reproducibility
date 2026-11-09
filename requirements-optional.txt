@@ -1,0 +1,4 @@
+# Optional — only needed for the LSTM baseline and QGAN training.
+# Without these, those two components skip with a clear message.
+torch>=2.0
+rdkit>=2023.09

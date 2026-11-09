@@ -1,0 +1,79 @@
+# Experimental configuration — CORRECTED v2
+# Every value here matches the manuscript or is explicitly flagged
+# as an implemented default where the manuscript does not state it
+# (see docs/PAPER_AMENDMENTS.md A5).
+#
+# Backends — FIXED (reviewer point 4):
+#   Zenodo v1 listed ibm_kyoto / ibm_osaka here. Table S1 lists
+#   ibm_brisbane / ibm_sherbrooke / ibm_torino and qpu.aria-1 /
+#   qpu.forte-1. This file now matches Table S1 exactly.
+#   kyoto / osaka are not configured anywhere in this package (they are named here only to say they were removed).
+
+seeds: [42, 123, 888]
+
+icu:
+  num_qubits: 6
+  variational_layers: 3
+  rotation_layers_total: 3
+  entanglement: circular
+  encoding: amplitude          # 25-dim features zero-padded to 64
+  ansatz: manual Ry + CNOT ring (RealAmplitudes reps=3, skip_final_rotation_layer=True)
+  parameters: 18
+  measure_qubit: 0
+  optimizer: COBYLA
+  training_objective: mse on P(qubit 0 = 1)  # paper says (1-Accuracy); see PAPER_AMENDMENTS A4
+  training_objective_paper: 1 - Accuracy
+  max_iter: 200
+  fidelity_threshold: 0.99
+  shots_simulator: 1024
+  shots_hardware_ibm: 1000
+  readout_error_mitigation: true
+  feature_dim: 25
+
+genomic:
+  num_qubits: 4
+  kernel_shots: 10000          # per kernel entry, paper Section 4.2
+  shots_hardware_ibm: 1000
+  batch_size: 250
+  n_variants_quantum: 5000
+  fidelity_threshold: 0.97
+  entanglement: ladder         # CNOT ladder, NOT "full" (Zenodo v1 error)
+  kernel: projected quantum kernel, Ry+Rz angle embedding repeated twice
+
+radiology:
+  num_qubits: 6
+  epochs: 200
+  batch_size: 16
+  psnr_threshold: 30.0
+  shots_hardware_ionq: 500
+  entanglement: ring           # CNOT ring, NOT "linear" (Zenodo v1 error)
+  generator_parameters: 12     # Ry angles; Rz tied (theta*0.5)
+  optimizer: Adam
+  learning_rate: 0.0002
+  beta1: 0.5
+
+drug_target:
+  num_qubits: 6
+  shots_hardware_ibm: 1000
+  pca_components: 6
+  fidelity_threshold: 0.99
+  entanglement: circular       # CNOT ring, 2 layers Ry
+  kernel_shots: 1000
+
+safe_service:
+  num_qubits: 4
+  shots_hardware_ionq: 500
+  entanglement: ladder         # defined in src/circuits/safe_kernel.py; see PAPER_AMENDMENTS A3
+
+hardware:
+  ibm_shots: 1000
+  ionq_shots: 500
+  readout_error_mitigation: true
+  ibm_backends: [ibm_brisbane, ibm_sherbrooke, ibm_torino]
+  ionq_backends: [qpu.aria-1, qpu.forte-1]
+
+# Classical baselines — implemented defaults (paper does not state all):
+baselines:
+  random_forest: {n_estimators: 200, max_depth: 10}
+  svm: {kernel: rbf, C: 1.0, gamma: scale}   # ICU + drug-target; genomic SVM is precomputed-kernel, C=1.0
+  lstm: {layers: 2, hidden_units: 128, dropout: 0.3, optimizer: Adam, learning_rate: 0.001, batch_size: 64, epochs: 50}

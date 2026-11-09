@@ -1,0 +1,303 @@
+{
+  "data_source": "SYNTHETIC demo data \u2014 NOT Table 12",
+  "seeds": [
+    42
+  ],
+  "maxiter": 50,
+  "paper_reference": "Table 12 (reported values, not reproduced here)",
+  "grid": [
+    [
+      "A1",
+      "Full Agile-Quantum (Scrum+XP + VQC)"
+    ],
+    [
+      "A2",
+      "Quantum only"
+    ],
+    [
+      "A3",
+      "Classical + Agile"
+    ],
+    [
+      "A4",
+      "Without TDD"
+    ],
+    [
+      "A5",
+      "Without entanglement"
+    ],
+    [
+      "A6",
+      "Reduced depth (one layer)"
+    ]
+  ],
+  "results": {
+    "A1": {
+      "description": "Full Agile-Quantum (Scrum+XP + VQC)",
+      "runs": [
+        {
+          "accuracy": 0.5416666666666666,
+          "sensitivity": 0.5333333333333333,
+          "specificity": 0.5555555555555556,
+          "f1": 0.5925925925925926,
+          "false_alarm_rate": 0.4444444444444444,
+          "n": 24,
+          "tp": 8,
+          "tn": 5,
+          "fp": 4,
+          "fn": 7,
+          "auc": 0.5111111111111111,
+          "model": "VQC 3 layers, entanglement, 18 params",
+          "process_note": "A1/A2/A4 share this model; Agile/TDD are process artefacts and cannot change it (Section 6.1).",
+          "seconds": 1.3870303630828857,
+          "seed": 42
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.5416666666666666,
+          "sd": 0.0,
+          "values": [
+            0.5416666666666666
+          ]
+        },
+        "f1": {
+          "mean": 0.5925925925925926,
+          "sd": 0.0,
+          "values": [
+            0.5925925925925926
+          ]
+        },
+        "auc": {
+          "mean": 0.5111111111111111,
+          "sd": 0.0,
+          "values": [
+            0.5111111111111111
+          ]
+        }
+      }
+    },
+    "A2": {
+      "description": "Quantum only",
+      "runs": [
+        {
+          "accuracy": 0.5416666666666666,
+          "sensitivity": 0.5333333333333333,
+          "specificity": 0.5555555555555556,
+          "f1": 0.5925925925925926,
+          "false_alarm_rate": 0.4444444444444444,
+          "n": 24,
+          "tp": 8,
+          "tn": 5,
+          "fp": 4,
+          "fn": 7,
+          "auc": 0.5111111111111111,
+          "model": "VQC 3 layers, entanglement, 18 params",
+          "process_note": "A1/A2/A4 share this model; Agile/TDD are process artefacts and cannot change it (Section 6.1).",
+          "seconds": 1.6518375873565674,
+          "seed": 42
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.5416666666666666,
+          "sd": 0.0,
+          "values": [
+            0.5416666666666666
+          ]
+        },
+        "f1": {
+          "mean": 0.5925925925925926,
+          "sd": 0.0,
+          "values": [
+            0.5925925925925926
+          ]
+        },
+        "auc": {
+          "mean": 0.5111111111111111,
+          "sd": 0.0,
+          "values": [
+            0.5111111111111111
+          ]
+        }
+      }
+    },
+    "A3": {
+      "description": "Classical + Agile",
+      "runs": [
+        {
+          "accuracy": 0.9583333333333334,
+          "sensitivity": 0.9333333333333333,
+          "specificity": 1.0,
+          "f1": 0.9655172413793104,
+          "false_alarm_rate": 0.0,
+          "n": 24,
+          "tp": 14,
+          "tn": 9,
+          "fp": 0,
+          "fn": 1,
+          "auc": 0.9925925925925926,
+          "model": "Random Forest n_estimators=200 max_depth=10",
+          "seconds": 1.0210378170013428,
+          "seed": 42
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.9583333333333334,
+          "sd": 0.0,
+          "values": [
+            0.9583333333333334
+          ]
+        },
+        "f1": {
+          "mean": 0.9655172413793104,
+          "sd": 0.0,
+          "values": [
+            0.9655172413793104
+          ]
+        },
+        "auc": {
+          "mean": 0.9925925925925926,
+          "sd": 0.0,
+          "values": [
+            0.9925925925925926
+          ]
+        }
+      }
+    },
+    "A4": {
+      "description": "Without TDD",
+      "runs": [
+        {
+          "accuracy": 0.5416666666666666,
+          "sensitivity": 0.5333333333333333,
+          "specificity": 0.5555555555555556,
+          "f1": 0.5925925925925926,
+          "false_alarm_rate": 0.4444444444444444,
+          "n": 24,
+          "tp": 8,
+          "tn": 5,
+          "fp": 4,
+          "fn": 7,
+          "auc": 0.5111111111111111,
+          "model": "VQC 3 layers, entanglement, 18 params",
+          "process_note": "A1/A2/A4 share this model; Agile/TDD are process artefacts and cannot change it (Section 6.1).",
+          "seconds": 1.0146152973175049,
+          "seed": 42
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.5416666666666666,
+          "sd": 0.0,
+          "values": [
+            0.5416666666666666
+          ]
+        },
+        "f1": {
+          "mean": 0.5925925925925926,
+          "sd": 0.0,
+          "values": [
+            0.5925925925925926
+          ]
+        },
+        "auc": {
+          "mean": 0.5111111111111111,
+          "sd": 0.0,
+          "values": [
+            0.5111111111111111
+          ]
+        }
+      }
+    },
+    "A5": {
+      "description": "Without entanglement",
+      "runs": [
+        {
+          "accuracy": 0.6666666666666666,
+          "sensitivity": 0.8666666666666667,
+          "specificity": 0.3333333333333333,
+          "f1": 0.7647058823529411,
+          "false_alarm_rate": 0.6666666666666666,
+          "n": 24,
+          "tp": 13,
+          "tn": 3,
+          "fp": 6,
+          "fn": 2,
+          "auc": 0.7111111111111111,
+          "model": "VQC 3 layers, NO entanglement, 18 params",
+          "seconds": 0.7779321670532227,
+          "seed": 42
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.6666666666666666,
+          "sd": 0.0,
+          "values": [
+            0.6666666666666666
+          ]
+        },
+        "f1": {
+          "mean": 0.7647058823529411,
+          "sd": 0.0,
+          "values": [
+            0.7647058823529411
+          ]
+        },
+        "auc": {
+          "mean": 0.7111111111111111,
+          "sd": 0.0,
+          "values": [
+            0.7111111111111111
+          ]
+        }
+      }
+    },
+    "A6": {
+      "description": "Reduced depth (one layer)",
+      "runs": [
+        {
+          "accuracy": 0.5833333333333334,
+          "sensitivity": 0.8,
+          "specificity": 0.2222222222222222,
+          "f1": 0.7058823529411765,
+          "false_alarm_rate": 0.7777777777777778,
+          "n": 24,
+          "tp": 12,
+          "tn": 2,
+          "fp": 7,
+          "fn": 3,
+          "auc": 0.5407407407407407,
+          "model": "VQC 1 layer, entanglement, 6 params",
+          "seconds": 0.883608341217041,
+          "seed": 42
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.5833333333333334,
+          "sd": 0.0,
+          "values": [
+            0.5833333333333334
+          ]
+        },
+        "f1": {
+          "mean": 0.7058823529411765,
+          "sd": 0.0,
+          "values": [
+            0.7058823529411765
+          ]
+        },
+        "auc": {
+          "mean": 0.5407407407407407,
+          "sd": 0.0,
+          "values": [
+            0.5407407407407407
+          ]
+        }
+      }
+    }
+  }
+}

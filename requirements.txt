@@ -1,0 +1,11 @@
+# Pinned, tested 2026-11-09 with Python 3.12 (see tests/smoke_test.py).
+# qiskit>=1.0 is unpinned and breaks on Qiskit 2 (ParameterVector
+# import removed, RealAmplitudes deprecated). Pin here.
+qiskit==2.6.2
+qiskit-aer==0.17.2
+numpy>=1.24,<3
+scipy>=1.11
+scikit-learn>=1.3
+pyyaml>=6.0
+pandas>=2.0
+pillow>=10.0

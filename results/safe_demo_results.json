@@ -1,0 +1,22 @@
+{
+  "source_csv": "data/safe/safe_template.csv",
+  "baseline": {
+    "code_duplication_lines": 12400.0,
+    "circuit_reuse_pct_mean": 15.0,
+    "end_to_end_latency_ms_mean": 450.0,
+    "clinician_nps_mean": 32.0,
+    "n_teams": 3
+  },
+  "safe": {
+    "code_duplication_lines": 4960.0,
+    "circuit_reuse_pct_mean": 78.0,
+    "end_to_end_latency_ms_mean": 248.0,
+    "clinician_nps_mean": 64.0,
+    "n_teams": 3
+  },
+  "code_duplication_change_pct": -60.0,
+  "circuit_reuse_change_pp": 63.0,
+  "latency_change_pct": -44.888888888888886,
+  "nps_change": 32.0,
+  "note": "Demo output computed from the template CSV (data/safe/safe_template.csv). The template rows encode Table 10's reported baseline and SAFe values as a worked example, so the deltas here follow by construction. Supply your own programme CSV for an independent evaluation."
+}

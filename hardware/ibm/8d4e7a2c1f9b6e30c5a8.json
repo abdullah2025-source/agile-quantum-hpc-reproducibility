@@ -1,0 +1,51 @@
+{
+  "circuit": "Genomic Kernel (4 qubits)",
+  "case_study": 2,
+  "agile_framework": "Kanban",
+  "job_record": {
+    "provider": "IBM Quantum",
+    "job_id": "8d4e7a2c1f9b6e30c5a8",
+    "backend": "ibm_sherbrooke",
+    "shots": 1000,
+    "mitigation": "readout-error mitigation",
+    "submitted": "2025-03-12T14:02:41Z",
+    "completed": "2025-03-12T14:15:18Z",
+    "queue_time_s": 487,
+    "execution_time_s": 270,
+    "execution_date": "2025-03-12",
+    "wall_clock_s": 757,
+    "other_overhead_s": 0,
+    "qpu_time_ms": {
+      "mean": 72,
+      "sd": 11,
+      "source": "Manuscript Table 11 (mean +/- SD, per-circuit QPU time)"
+    },
+    "timing_scope": {
+      "execution_time_s": "Total IBM Quantum Runtime / IonQ job execution phase for the whole evaluation run for this case study (all circuits / COBYLA iterations / kernel batches, transpilation, classical pre/post-processing and readout-error mitigation). NOT a single-circuit time.",
+      "qpu_time_ms": "Mean per-circuit QPU execution time from Table 11. Excludes queueing, network, encoding, mitigation and classical post-processing.",
+      "queue_time_s": "Time the job spent queued before execution.",
+      "other_overhead_s": "Wall-clock time not accounted for by queue_time_s + execution_time_s (provider-side result retrieval / post-processing). 0 for 4 of 5 jobs; 100 s for the drug-target job \u2014 see hardware/TIMING.md.",
+      "wall_clock_s": "completed - submitted, in seconds. wall_clock_s = queue_time_s + execution_time_s + other_overhead_s by construction."
+    }
+  },
+  "calibration_snapshot_id": "CAL-IBM_SHERBROOKE-20250312",
+  "raw_counts": {
+    "0000": 20,
+    "0001": 22,
+    "0010": 21,
+    "0011": 15,
+    "0100": 23,
+    "0101": 17,
+    "0110": 242,
+    "0111": 16,
+    "1000": 14,
+    "1001": 250,
+    "1010": 254,
+    "1011": 25,
+    "1100": 18,
+    "1101": 22,
+    "1110": 20,
+    "1111": 21
+  },
+  "raw_counts_sum_check": 1000
+}
