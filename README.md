@@ -4,7 +4,7 @@ Supporting materials for the manuscript
 **"Personalized Healthcare Advancement and Real-Time Monitoring through a Multi-Framework Agile-Quantum HPC Ecosystem"**
 (Fatima, Hafeez, Abdullah, Shaukat, Alam).
 
-Deposit: https://doi.org/10.5281/zenodo.23933623 — upload this package
+Deposit: https://zenodo.org/records/24094690 — upload this package
 as a new version of that deposit and cite the new version DOI.
 
 ## What is in here
